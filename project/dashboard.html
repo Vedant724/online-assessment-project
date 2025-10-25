@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Assessment Platform</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <img src="logo/download.jpeg" alt="Logo" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="#" id="logoutBtn">Logout</a>
+    </nav>
+  </header>
+
+  <section class="dashboard">
+    <h2 id="welcomeText">Welcome!</h2>
+
+    <div class="role-switch">
+      <label for="roleSelect">Switch Role (Demo):</label>
+      <select id="roleSelect">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+      </select>
+    </div>
+
+    <!-- STUDENT VIEW -->
+    <div id="studentView" class="view">
+      <h3>Upcoming Exams</h3>
+      <div class="exam-list" id="upcomingExams"></div>
+
+      <h3>Past Results</h3>
+      <div class="exam-list" id="pastResults"></div>
+    </div>
+
+    <!-- TEACHER VIEW -->
+    <div id="teacherView" class="view hidden">
+      <h3>Your Created Exams</h3>
+      <div class="exam-list" id="teacherExams"></div>
+
+      <button id="createExamBtn">+ Create New Exam</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Assessment Platform | Dashboard</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

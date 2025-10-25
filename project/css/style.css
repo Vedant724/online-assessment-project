@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg);
+
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:lightgreen;
+  color: white;
+  padding: 15px 40px;
+}
+
+.navbar .logo {
+  height: 60px;
+}
+
+.navbar nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 1000;
+}
+
+.navbar nav a.active, .navbar nav a:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background: green;
+}
+
+/* FOOTER */
+footer {
+  margin-top: auto;
+  background: lightgreen;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9em;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  background: yellowgreen;
+  padding: 40px;
+  width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: lightgreen;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+  font-weight: 500;
+}
+
+form input, form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 12px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #32aa2d;
+}
+.dashboard {
+  padding: 40px;
+}
+
+/*DASHBOARD*/
+.dashboard h2 {
+  color: green;
+  margin-bottom: 20px;
+}
+
+.role-switch {
+  margin-bottom: 20px;
+}
+
+.exam-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.exam-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.exam-card:hover {
+  transform: translateY(-3px);
+}
+
+.exam-card h4 {
+  margin-bottom: 10px;
+  color: green;
+}
+
+.exam-card p {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.exam-card button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.exam-card button:hover {
+  background: green;
+}
+
+.hidden {
+  display: none;
+}
+
+.exam-container {
+  display: flex;
+  min-height: 85vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #004aad;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#questionList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.q-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: #ffffff33;
+  color: white;
+  font-weight: bold;
+}
+
+.q-btn.active {
+  background: #fff;
+  color: #004aad;
+}
+
+.q-btn.answered {
+  background: #00c853;
+  color: white;
+}
+
+.timer {
+  text-align: center;
+  background: #003580;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Main question area */
+.question-area {
+  flex: 1;
+  background: #f4f4f4;
+  padding: 30px;
+}
+
+.question-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.question-card h3 {
+  margin-bottom: 15px;
+  color: #004aad;
+}
+
+.options label {
+  display: block;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+#submitExamBtn {
+  background: #ff5252;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+#submitExamBtn:hover {
+  background: #d32f2f;
+}
+
